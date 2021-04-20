@@ -11,28 +11,42 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 </head>
 
 <body>
-    <nav class="navbar navbar-ligt bg-light navbar-expand-sm">
+    <nav class="navbar navbar-ligt bg-light navbar-expand-sm fixed-top">
         <a href="/" class="navbar-brand">Whiskey drop</a>
         <ul class="navbar-nav mr-auto">
             <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item mr-2"><a class="nav-link" href="/about">About</a></li>
+            <li class="nav-item mr-2 d-block d-sm-none"><a class="nav-link" href="/Login">Sign In / Sign Up</a></li>
         </ul>
-        <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
-        <a href="/login">Sign In / Sign Up</a>
+        <div class="d-none d-md-block">
+            <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
+            <a href="/login">Sign In / Sign Up</a>
+        </div>
 
     </nav>
 
-    <article class="container">
+    <article class="container mt-3">
+        <div class="row">
+            <div class="col-12">
+                <div class="alert alert-warning">
+                    <strong>SALE NOW ON!</strong> Get 12 months for free!
+                    <a href="">See here for details!</a>
+                </div>
+            </div>
+        </div>
         <!-- Callout -->
         <div class="row">
             <div class="col-12">
-                <section class="callout">
+                <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
                     <p class="lead">Sign up to start receiving the world's best whiskeys every month.
-                        <s>€19.99</s> <strong><mark>First one is free!</mark></strong> </p>
+                        <s class="d-none d-sm-inline">€19.99</s>
+                        <span class="d-inline d-sm-none"><br></span>
+                        <strong><mark>First one is free!</mark></strong> </p>
                     <button class="btn btn-success btn-lg">Sign up!</button>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
                             responsibly.</small></p>
@@ -45,26 +59,46 @@
         <!-- Quotes -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Quotes:</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p>I've been more drunk than sober since I got my subscription</p>
-                        <p>- Mois</p>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="https://github.com/Code-Institute-Solutions/BootstrappingYourNextBigIdea-BS4/blob/master/03-Components/02-core_components-part-2/images/girl-image.png?raw=true"
+                                class="rounded-circle m-3" height="100" width="100" alt="Girl">
+                        </div>
+                        <div class="media-body">
+
+                            <blockquote class="blockquote">
+                                <p class="text-uppercase">I've been more drunk than sober since I got my
+                                    subscription.
+                                </p>
+                                <p>- Mois</p>
+                            </blockquote>
+                        </div>
+
+                    </div>
                 </div>
-            
+
                 <div class="col-12 col-md-6">
-                    <blockquote class="blockquote">
-                        <p class="text-uppercase">All my friends want to come over to taste the new whiskey I received.
-                        </p>
-                        <p>- Betsy B.</p>
-                    </blockquote>
+                    <div class="media">
+                        <div class="d-none d-sm-block">
+                            <img src="https://github.com/Code-Institute-Solutions/BootstrappingYourNextBigIdea-BS4/blob/master/03-Components/02-core_components-part-2/images/guy-image.png?raw=true"
+                                class="rounded-circle m-3" height="100" width=" 100" alt="Guy">
+                        </div>
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p class="text-uppercase">All my friends want to come over to taste the new whiskey I
+                                    received.
+                                </p>
+                                <p>- Betsy B.</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </section>
         <hr>
         <!-- /.Quotes -->
@@ -73,14 +107,14 @@
 
         <section class="features">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Features:</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3>Feature 1</h3>
+                        <h3 <i class="fas fa-gifts "></i> Feature 1 <span class="badge badge-success">NEW!</span></h3>
                         <p class="text-uppercase">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
                             veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
@@ -101,7 +135,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3>Feature 2</h3>
+                        <h3 <i class="fas fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
                         <p class="text-uppercase">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
                             veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
