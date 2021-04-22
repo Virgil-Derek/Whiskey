@@ -1,0 +1,46 @@
+body {
+    font-family: 'Potta One', cursive;
+
+}
+
+.alert-container {}
+
+.callout-container {
+    height: 100vh;
+    background: url("../image/star-wars-squadrons-zoom-background.jpg") no-repeat bottom right fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.quotes-container {}
+
+.features-container {}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron-header{
+    color: #ffe81f;
+    font-weight: bold;
+    margin-bottom:30px;
+}
+
+.jumbotron .lead {
+    color: #0300e3d6;
+    margin: 25px 0;
+}
+
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #860909
+}
+ 

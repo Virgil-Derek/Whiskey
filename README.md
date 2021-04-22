@@ -15,4 +15,14 @@ All have been given classes, so to style them later with own css.
 Div in quotes was changed to class="Blockquote". 
 in Features. I could not find the tags in bootstrap doucumentation under buttons to copy and pasdte the READ more tag. 
 
+Add Modal:
+add style.css 
+add google fonts link
+add font-family in css
+
+change article to div and seperate in 3 sections
+
+add stylesheet for callout/quotes/features/alert-container
+
+
 
